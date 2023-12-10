@@ -1,5 +1,3 @@
-#question 1
-
 import pandas as pd
 
 def calculate_distance_matrix(dataset_path):
@@ -31,9 +29,7 @@ dataset_path = 'dataset-3.csv'
 result_distance_matrix = calculate_distance_matrix(dataset_path)
 print(result_distance_matrix)
 
-#question 2
 
-import pandas as pd
 
 def unroll_distance_matrix(distance_matrix):
     # Reset the index to include 'id_start' as a column
@@ -57,9 +53,6 @@ distance_matrix_q1 = calculate_distance_matrix('dataset-3.csv')  # Assuming you 
 result_unrolled = unroll_distance_matrix(distance_matrix_q1)
 print(result_unrolled)
 
-#question 3
-
-import pandas as pd
 
 def find_ids_within_ten_percentage_threshold(df, reference_value):
     # Filter the DataFrame based on the reference value
@@ -89,9 +82,7 @@ reference_value = 1  # Replace with the desired reference value
 result_ids_within_threshold = find_ids_within_ten_percentage_threshold(unrolled_df_q3, reference_value)
 print(result_ids_within_threshold)
 
-#question 4
 
-import pandas as pd
 
 def calculate_toll_rate(df):
     # Define rate coefficients for each vehicle type
@@ -107,9 +98,7 @@ unrolled_df_q3 = unroll_distance_matrix(distance_matrix_q1)  # Assuming you have
 result_df_with_toll_rates = calculate_toll_rate(unrolled_df_q3)
 print(result_df_with_toll_rates)
 
-#question 5
 
-import pandas as pd
 from datetime import datetime, time, timedelta
 
 def calculate_time_based_toll_rates(df):
