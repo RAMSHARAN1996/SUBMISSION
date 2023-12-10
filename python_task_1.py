@@ -16,9 +16,7 @@ dataset_path = 'dataset-1.csv'
 result_matrix = generate_car_matrix(dataset_path)
 print(result_matrix)
 
-#question 2
 
-import pandas as pd
 
 def get_type_count(df):
     # Add a new categorical column 'car_type' based on 'car' values
@@ -36,9 +34,7 @@ df = pd.read_csv(dataset_path)
 result_counts = get_type_count(df)
 print(result_counts)
 
-#question 3
 
-import pandas as pd
 
 def get_bus_indexes(df):
     # Calculate the mean value of the 'bus' column
@@ -57,9 +53,7 @@ df = pd.read_csv(dataset_path)
 result_indexes = get_bus_indexes(df)
 print(result_indexes)
 
-#question 5
 
-import pandas as pd
 
 def multiply_matrix(input_df):
     # Create a copy of the input DataFrame to avoid modifying the original DataFrame
@@ -78,9 +72,7 @@ result_matrix = generate_car_matrix('dataset-1.csv')
 modified_result = multiply_matrix(result_matrix)
 print(modified_result)
 
-#question 6
 
-import pandas as pd
 
 def check_time_completeness(df):
     # Combine 'startDay' and 'startTime' to create a 'start_datetime' column
